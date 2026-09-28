@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undian Menarik</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+        }
+
+        .container {
+            width: 490px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,.12);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 13px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 13px;
+            margin-top: 10px;
+            border: 0;
+            border-radius: 6px;
+            background: #1677ff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #warning {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            background: #fff3cd;
+            color: #664d03;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="Phishing.png" class="poster">
+
+    <h2>Daftarkan Nomor HP Anda!</h2>
+
+    <p>
+        Raih Kesempatan Menangkan
+        Hadiah <b>Mobil Pajero, Motor Xmax, Iphone 18</b> BURUAN DAFTARKAN SEGERA!!
+    </p>
+
+    <input
+        type="text"
+        placeholder="Nomor HP contoh: 081234567890"
+    >
+
+    <input
+        type="text"
+        placeholder="Kode OTP: 123456"
+    >
+
+    <button onclick="showWarning()">
+        Lanjutkan
+    </button>
+
+    <div id="warning">
+        <b>⚠️ YAAHHH KETIPU DEHH</b>
+        <br><br>
+        mulane ati" nek bukak link engko metune ngene.
+        <br><br>
+        <b>Jangan pernah memberikan OTP kepada orang lain.</b>
+    </div>
+
+</div>
+
+<script>
+function showWarning() {
+    document.getElementById("warning").style.display = "block";
+}
+</script>
+
+</body>
+</html>
